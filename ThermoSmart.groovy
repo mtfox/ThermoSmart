@@ -22,7 +22,7 @@ definition(
     name: "ThermoSmart",
     namespace: “mtfox”,
     author: "M. Fox",
-    description: "V1.1n: Changes your thermostat settings automatically in response to a mode change. You can either SET the thermostat to your desired temperature or RESUME the regular schedule. ",
+    description: "V1.2b: Changes your thermostat settings automatically in response to a mode change. You can either SET the thermostat to your desired temperature or RESUME the regular schedule. ",
     category: "Green Living",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Meta/temp_thermo.png",
     iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Meta/temp_thermo@2x.png"
@@ -33,7 +33,7 @@ preferences {
 }
 
 def setThermostat() {
-	dynamicPage(name: "setThermostat", title: null, install: true, uninstall: true) {
+	dynamicPage(name: "setThermoSmart", title: null, install: true, uninstall: true) {
  
 		section{
 			input(name: "thermostats", type: "capability.thermostat", title: "Thermostats",
