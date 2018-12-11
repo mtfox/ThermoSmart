@@ -29,7 +29,7 @@ definition(
 )
 
 preferences {
-	 page(name: "setThermostat")
+	 page(name: "setThermoSmart")
 }
 
 def setThermostat() {
