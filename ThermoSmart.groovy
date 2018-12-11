@@ -19,7 +19,7 @@
  */
 
 definition(
-    name: "Thermosmart",
+    name: "ThermoSmart",
     namespace: “mtfox”,
     author: "M. Fox",
     description: "V1.1n: Changes your thermostat settings automatically in response to a mode change. You can either SET the thermostat to your desired temperature or RESUME the regular schedule. ",
@@ -29,7 +29,7 @@ definition(
 )
 
 preferences {
-	 page(name: "setThermostat")
+	 page(name: "setThermoSmart")
 }
 
 def setThermostat() {
