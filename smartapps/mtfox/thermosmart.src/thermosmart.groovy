@@ -28,11 +28,11 @@ definition(
 )
 
 preferences {
-	 page(name: "setThermostat")
+	 page(name: "setThermoSmart")
 }
 
 def setThermostat() {
-	dynamicPage(name: "setThermostat", title: null, install: true, uninstall: true) {
+	dynamicPage(name: "setThermoSmart", title: null, install: true, uninstall: true) {
  
 		section{
 			input(name: "thermostats", type: "capability.thermostat", title: "Thermostats",
