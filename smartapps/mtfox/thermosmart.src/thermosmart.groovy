@@ -18,10 +18,10 @@
  *		Chris Gillanders (cagilla)
  */
 definition(
-    name: "Thermosmart",
+    name: "ThermoSmart",
     namespace: "mtfox",
     author: "M. Fox",
-    description: "V1.1n: Changes your thermostat settings automatically in response to a mode change. You can either SET the thermostate to your desired temperature or RESUME the regular schedule. ",
+    description: "V1.2c: Changes your thermostat settings automatically in response to a mode change. You can either SET the thermostate to your desired temperature or RESUME the regular schedule. ",
     category: "Green Living",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Meta/temp_thermo.png",
     iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Meta/temp_thermo@2x.png"
