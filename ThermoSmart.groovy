@@ -22,7 +22,7 @@ definition(
     name: "ThermoSmart",
     namespace: “mtfox”,
     author: "M. Fox",
-    description: "V1.2b: Changes your thermostat settings automatically in response to a mode change. You can either SET the thermostat to your desired temperature or RESUME the regular schedule. ",
+    description: "V1.3a: Changes your thermostat settings automatically in response to a mode change. You can either SET the thermostat to your desired temperature or RESUME the regular schedule. ",
     category: "Green Living",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Meta/temp_thermo.png",
     iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Meta/temp_thermo@2x.png"
@@ -94,7 +94,7 @@ def coolingSetpointHandler(evt)
 
 def temperatureHandler(evt)
 {
-	log.debug "TemperatureHandler: $evt, $settings"
+	log.debug "temperatureHandler: $evt, $settings"
 }
 
 def changedLocationMode(evt)
@@ -117,11 +117,11 @@ def appTouch(evt)
     log.debug "Current state: $settings.state"
     if(settings.state == "Set"){
        settings.state = "Resume"
-       log.debug "setting state to Reset: $settings.state"
+       log.debug "Setting state to Reset: $settings.state"
     }
     else {
        settings.state = "Set"
-       log.debug "setting state to Set: $settings.state"
+       log.debug "Setting state to Set: $settings.state"
     }
   
 
