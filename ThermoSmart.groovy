@@ -94,7 +94,7 @@ def coolingSetpointHandler(evt)
 
 def temperatureHandler(evt)
 {
-	log.debug "TemperatureHandler: $evt, $settings"
+	log.debug "temperatureHandler: $evt, $settings"
 }
 
 def changedLocationMode(evt)
@@ -117,11 +117,11 @@ def appTouch(evt)
     log.debug "Current state: $settings.state"
     if(settings.state == "Set"){
        settings.state = "Resume"
-       log.debug "setting state to Reset: $settings.state"
+       log.debug "Setting state to Reset: $settings.state"
     }
     else {
        settings.state = "Set"
-       log.debug "setting state to Set: $settings.state"
+       log.debug "Setting state to Set: $settings.state"
     }
   
 
